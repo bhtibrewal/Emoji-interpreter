@@ -1,8 +1,16 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  background-color: #2f4f4f;
+  width: 80%;
+  border-radius: 1rem;
+  margin: auto;
 }
+
 input {
   padding: 1rem;
-  width: 80%;
+  width: 50%;
+}
+.text {
+  padding: 1rem;
 }
