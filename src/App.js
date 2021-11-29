@@ -8,7 +8,11 @@ const emojiDictionary = {
   "😉": "wink",
   "😪": "sleepy",
   "🙄": "roll eyes",
-  "🥳": "partying"
+  "🥳": "partying",
+  "😍": "heart-eyes",
+  "🤑": "money-mouth-face",
+  "🤗": "hugs",
+  "😋": "yummy"
 };
 var emojis = Object.keys(emojiDictionary);
 //console.log(emojis);
@@ -19,9 +23,11 @@ export default function App() {
 
   function inputChangeHandler(event) {
     var input = event.target.value;
+
     var mean = "Meaning: " + emojiDictionary[input];
 
-    if (mean === undefined) mean = "we don't have that in our database";
+    if (emojiDictionary[input] === undefined)
+      mean = "Sorry!,we don't have that in our database";
 
     setMeaning(mean);
   }
